@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img class="main-header__logo-image" src="#" width="" height="" alt="#">
+      </a>
+      <a class="main-header__logo">
+        <img class="main-header__logo-text" src="#" width="" height="" alt="#">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </nav>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+    </header>
+    <main class="main-form">
+      <section class="program-selection">
+        <div class="program-selection__wrapper">
+          <h1 class="program-selection__title">
+            Подбор программы
+          </h1>
+          <p class="program-selection__description">
+            Заполните анкету, и мы подберем
+            программу питания для вашего кота
+          </p>
+          <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="program-selection__label">
+              <span class="program-selection__name">
+                ИМЯ:*
+              </span>
+              <input class="program-selection__field program-selection__field--name" placeholder="Барсик" type="text"
+                name="cat-name" required>
+            </label>
+          </form>
+          <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="program-selection__label">
+              <span class="program-selection__weight">
+                Вес (кг):*
+              </span>
+              <input class="program-selection__field program-selection__field--weight" placeholder="7" type="number"
+                name="cat-weight" required>
+            </label>
+          </form>
+          <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="program-selection__label">
+              <span class="program-selection__years">
+                Возраст (лет):
+              </span>
+              <input class="program-selection__field program-selection__field--years" placeholder="7" type="number"
+                name="cat-years" required>
+            </label>
+          </form>
+          <div class="categories">
+            <h2 class="categories__title">
+              <span class="visually-hidden">Цель, приследуемая вашим котом.</span>
+            </h2>
+            <fieldset class="categories__filter">
+              <ul class="categories__list">
+                <li class="categories__item">
+                  <label class="categories__control">
+                    <input
+                      class="categories__control-input"
+                      type="radio"
+                      name="categories-group"
+                      value="weight-loss"
+                      checked
+                    >
+                    <span class="categories__mark"></span>
+                    <span class="categories__label"> похудение </span>
+                  </label>
+                </li>
+                <li class="categories__item">
+                  <label class="categories__control">
+                    <input
+                      class="categories__control-input"
+                      type="radio"
+                      name="categories-group"
+                      value="weight-gain"
+                    >
+                    <span class="categories__mark"></span>
+                    <span class="categories__label"> набор массы </span>
+                  </label>
+                </li>
+                <li class="categories__item">
+                  <label class="categories__control">
+                    <input
+                      class="categories__control-input"
+                      type="radio"
+                      name="categories-group"
+                      value="need-advice"
+                    >
+                    <span class="categories__mark"></span>
+                    <span class="categories__label"> не знаю (нужен ваш совет) </span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="contacts">
+            <h2 class="contacts__title">
+              Контактные данные
+              (владельца кота)
+            </h2>
+            <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="contacts__label">
+                <span class="contacts__email">
+                  E-mail:*
+                </span>
+                <input class="contacts__field contacts__field--email" placeholder="kuklachev@gmail.com" type="email"
+                  name="cat-owner-email" required>
+              </label>
+            </form>
+            <form class="contacts__form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="contacts__label">
+                <span class="contacts__phone">
+                  Телефон:*
+                </span>
+                <input class="contacts__field contacts__field--phone" placeholder="8 (960) 900-60-90" type="tel"
+                  name="cat-owner-phone-number" required>
+              </label>
+            </form>
+          </div>
+          <div class="comment">
+            <h2 class="comment__title">Комментарий</h2>
+            <form class="comment__form" action="https://echo.htmlacademy.ru/courses" method="post">
+              <textarea class="comment__input" name="comment-about-cat" rows="7" placeholder="Расскажите обо всех повАдках кота"></textarea>
+            </form>
+          </div>
+          <div class="preferences">
+            <h2 class="preferences__title">Дополнительно</h2>
+            <fieldset class="preferences__filter">
+              <ul class="preferences__list">
+                <li class="preferences__item">
+                  <label class="preferences__control">
+                    <input
+                      class="preferences__control-input"
+                      type="checkbox"
+                      name="preferences-group"
+                      value="sweetener"
+                      checked
+                    >
+                    <span class="preferences__mark"></span>
+                    <span class="preferences__label">сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="preferences__item">
+                  <label class="preferences__control">
+                    <input
+                      class="preferences__control-input"
+                      type="checkbox"
+                      name="preferences-group"
+                      value="water"
+                    >
+                    <span class="preferences__mark"></span>
+                    <span class="preferences__label">питьевая вода</span>
+                  </label>
+                </li>
+                <li class="preferences__item">
+                  <label class="preferences__control">
+                    <input
+                      class="preferences__control-input"
+                      type="checkbox"
+                      name="preferences-group"
+                      value="milk"
+                    >
+                    <span class="preferences__mark"></span>
+                    <span class="preferences__label">молоко</span>
+                  </label>
+                </li>
+                <li class="preferences__item">
+                  <label class="preferences__control">
+                    <input
+                      class="preferences__control-input"
+                      type="checkbox"
+                      name="preferences-group"
+                      value="vitamins"
+                    >
+                    <span class="preferences__mark"></span>
+                    <span class="preferences__label">витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <button class="program-selection__button" type="submit">
+            Отправить заявку
+          </button>
+          <p class="program-selection__info">* — Обязательные поля</p>
+        </div>
+      </section>
+      <section class="cooperation">
+        <h2 class="cooperation__title">
+          <span class="visually-hidden">Сотрудничество с нами.</span>
+        </h2>
+        <p class="cooperation__description">
+          приглашаем
+          к сотрудничеству
+          дилеров!
+        </p>
+        <p class="cooperation__address-street">
+          ул. Большая
+          Конюшенная, д. 19/8
+        </p>
+        <p class="cooperation__address-city">
+          Санкт-Петербург
+        </p>
+        <div class="map"></div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <a class="main-footer__logo">
+          <img class="main-footer__logo-image" src="#" width="" height="" alt="#">
+        </a>
+        <div class="main-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            </li>
+          </ul>
+          <div class="main-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>
