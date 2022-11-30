@@ -2,8 +2,8 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body class="page__body">
@@ -46,33 +46,46 @@
     <main class="main-form">
       <section class="program-selection">
         <div class="program-selection__wrapper">
-          <h1 class="program-selection__title">
-            Подбор программы
-          </h1>
+          <h1 class="program-selection__title">Подбор программы</h1>
           <p class="program-selection__description">
-            Заполните анкету, и мы подберем
-            программу питания для вашего кота
+            Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
-          <form class="program-selection__form" action="https://echo.htmlacademy.ru/" method="post">
+          <form
+            class="program-selection__form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
             <fieldset class="cat-data">
               <ul class="cat-data__list">
                 <li class="cat-data__item">
-                  <span class="cat-data__label">
-                    ИМЯ:*
-                  </span>
-                  <input class="cat-data__input" placeholder="Барсик" type="text" name="cat-name" required>
+                  <span class="cat-data__label"> ИМЯ:* </span>
+                  <input
+                    class="cat-data__input"
+                    placeholder="Барсик"
+                    type="text"
+                    name="cat-name"
+                    required
+                  >
                 </li>
                 <li class="cat-data__item">
-                  <span class="cat-data__label">
-                    Вес (кг):*
-                  </span>
-                  <input class="cat-data__input" placeholder="7" type="number" name="cat-weight" required>
+                  <span class="cat-data__label"> Вес (кг):* </span>
+                  <input
+                    class="cat-data__input"
+                    placeholder="7"
+                    type="number"
+                    name="cat-weight"
+                    required
+                  >
                 </li>
                 <li class="cat-data__item">
-                  <span class="cat-data__label">
-                    Возраст (лет):
-                  </span>
-                  <input class="cat-data__input" placeholder="7" type="number" name="cat-years" required>
+                  <span class="cat-data__label"> Возраст (лет): </span>
+                  <input
+                    class="cat-data__input"
+                    placeholder="7"
+                    type="number"
+                    name="cat-years"
+                    required
+                  >
                 </li>
               </ul>
             </fieldset>
@@ -80,93 +93,114 @@
               <ul class="program-type__list">
                 <li class="program-type__item">
                   <input
-                      class="program-type__control-input"
-                      type="radio"
-                      name="categories-group"
-                      value="weight-loss"
-                      checked
-                    >
-                    <span class="program-type__label"> похудение </span>
+                    class="program-type__control-input"
+                    type="radio"
+                    name="categories-group"
+                    value="weight-loss"
+                    checked
+                  >
+                  <span class="program-type__label"> похудение </span>
                 </li>
                 <li class="program-type__item">
                   <input
-                      class="program-type__control-input"
-                      type="radio"
-                      name="categories-group"
-                      value="weight-gain"
-                    >
-                    <span class="program-type__label"> набор массы </span>
+                    class="program-type__control-input"
+                    type="radio"
+                    name="categories-group"
+                    value="weight-gain"
+                  >
+                  <span class="program-type__label"> набор массы </span>
                 </li>
                 <li class="program-type__item">
                   <input
-                      class="program-type__control-input"
-                      type="radio"
-                      name="categories-group"
-                      value="need-advice"
-                    >
-                    <span class="program-type__label"> не знаю (нужен ваш совет) </span>
+                    class="program-type__control-input"
+                    type="radio"
+                    name="categories-group"
+                    value="need-advice"
+                  >
+                  <span class="program-type__label">
+                    не знаю (нужен ваш совет)
+                  </span>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="owner-contacts">
-              <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
+              <legend class="owner-contacts__title">
+                Контактные данные (владельца кота)
+              </legend>
               <ul class="owner-contacts__list">
                 <li class="owner-contacts__item">
                   <span class="owner-contacts__label"> E-mail:*</span>
-                  <input class="owner-contacts__input"  placeholder="kuklachev@gmail.com" type="email" name="cat-owner-email" required>
+                  <input
+                    class="owner-contacts__input"
+                    placeholder="kuklachev@gmail.com"
+                    type="email"
+                    name="cat-owner-email"
+                    required
+                  >
                 </li>
                 <li class="owner-contacts__item">
                   <span class="owner-contacts__label"> Телефон:*</span>
-                  <input class="owner-contacts__input" placeholder="8 (960) 900-60-90" type="tel" name="cat-owner-phone-number" required>
+                  <input
+                    class="owner-contacts__input"
+                    placeholder="8 (960) 900-60-90"
+                    type="tel"
+                    name="cat-owner-phone-number"
+                    required
+                  >
                 </li>
               </ul>
             </fieldset>
             <fieldset class="comment">
               <legend class="comment__title">Комментарий</legend>
-              <textarea class="comment__input" name="comment-about-cat" rows="7" placeholder="Расскажите обо всех повАдках кота"></textarea>
+              <textarea
+                class="comment__input"
+                name="comment-about-cat"
+                rows="7"
+                placeholder="Расскажите обо всех повАдках кота"
+              ></textarea>
             </fieldset>
             <fieldset class="preferences">
               <legend class="preferences__title">Дополнительно</legend>
               <ul class="preferences__list">
                 <li class="preferences__item">
                   <input
-                      class="preferences__control-input"
-                      type="checkbox"
-                      name="preferences-group"
-                      value="sweetener"
-                      checked
-                    >
-                    <span class="preferences__label">сахарозаменитель</span>
+                    class="preferences__control-input"
+                    type="checkbox"
+                    name="preferences-group"
+                    value="sweetener"
+                    checked
+                  >
+                  <span class="preferences__label">сахарозаменитель</span>
                 </li>
                 <li class="preferences__item">
                   <input
-                      class="preferences__control-input"
-                      type="checkbox"
-                      name="preferences-group"
-                      value="water"
-                      checked
-                    >
-                    <span class="preferences__label">питьевая вода</span>
+                    class="preferences__control-input"
+                    type="checkbox"
+                    name="preferences-group"
+                    value="water"
+                    checked
+                  >
+                  <span class="preferences__label">питьевая вода</span>
                 </li>
                 <li class="preferences__item">
                   <input
-                      class="preferences__control-input"
-                      type="checkbox"
-                      name="preferences-group"
-                      value="milk"
-                      checked
-                    >
-                    <span class="preferences__label">молоко</span>
+                    class="preferences__control-input"
+                    type="checkbox"
+                    name="preferences-group"
+                    value="milk"
+                    checked
+                  >
+                  <span class="preferences__label">молоко</span>
                 </li>
                 <li class="preferences__item">
                   <input
-                      class="preferences__control-input"
-                      type="checkbox"
-                      name="preferences-group"
-                      value="vitamins"
-                      checked
-                    >
-                    <span class="preferences__label">витамины</span>
+                    class="preferences__control-input"
+                    type="checkbox"
+                    name="preferences-group"
+                    value="vitamins"
+                    checked
+                  >
+                  <span class="preferences__label">витамины</span>
                 </li>
               </ul>
             </fieldset>
@@ -177,9 +211,7 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">
-          Наши контакты.
-        </h2>
+        <h2 class="visually-hidden">Наши контакты.</h2>
         <div class="contacts__content">
           <h3 class="contacts__description">
             приглашаем к сотрудничеству дилеров!
@@ -238,4 +270,3 @@
     </footer>
   </body>
 </html>
-
