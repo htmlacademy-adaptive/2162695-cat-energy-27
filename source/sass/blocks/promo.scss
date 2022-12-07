@@ -1,36 +1,36 @@
-.promo{
+.promo {
   margin: 0;
 }
 
-.promo__wrapper{
-  margin:0;
-  background-color: $color-apple ;
+.promo__wrapper {
+  margin: 0;
+  background-color: $color-apple;
 }
 
-.promo__title{
+.promo__title {
   font-family: $ff-oswald;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color:$color-default-white;
+  color: $color-default-white;
 }
 
-.promo__description{
+.promo__description {
   font-family: $ff-oswald;
   font-size: $fz-default;
   line-height: $fz-default;
   font-weight: 400;
   text-transform: uppercase;
-  color:$color-default-white;
+  color: $color-default-white;
 }
 
-.promo__button{
+.promo__button {
   font-family: $ff-oswald;
   font-size: $fz-default;
   line-height: 18px;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color:$color-default-white;
+  color: $color-default-white;
   background-color: $color-apple;
 }

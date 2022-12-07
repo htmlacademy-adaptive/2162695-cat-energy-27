@@ -1,87 +1,83 @@
-.catalog{
+.catalog {
   margin: 0;
 }
 
-.catalog__title{
+.catalog__title {
   font-family: $ff-oswald;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  color:$color-default-black;
+  color: $color-default-black;
 }
 
-.catalog__wrapper{
+.catalog__wrapper {
   margin: 0;
 }
 
-.catalog__list{
+.catalog__list {
   margin: 0;
 }
 
-.catalog__item{
+.catalog__item {
   margin: 0;
 }
 
-.catalog__img-link{
+.catalog__img-link {
   text-decoration: none;
 }
 
-.catalog__card-image{
+.catalog__card-image {
   margin: 0;
 }
 
-.catalog__item-content{
+.catalog__item-content {
   margin: 0;
 }
 
-.catalog__title-link{
+.catalog__title-link {
   text-decoration: none;
 }
 
-.catalog__card-title{
+.catalog__card-title {
   font-family: $ff-oswald;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  color:$color-nero;
+  color: $color-nero;
 }
 
-.catalog__description-list{
+.catalog__description-list {
   margin: 1;
 }
 
-.catalog__description-wrapper{
+.catalog__description-wrapper {
   margin: 1;
 }
 
-.catalog__description-term{
+.catalog__description-term {
   font-family: $ff-lato;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  color:$color-charcoal;
+  color: $color-charcoal;
 }
 
-.catalog__description-definition{
+.catalog__description-definition {
   font-family: $ff-lato;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  color:$color-charcoal;
+  color: $color-charcoal;
 }
 
-.catalog__button{
+.catalog__button {
   font-family: $ff-oswald;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
-  color:$color-default-white;
+  color: $color-default-white;
   background-color: $color-apple;
 }
-
-
-
-

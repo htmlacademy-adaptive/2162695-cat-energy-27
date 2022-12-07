@@ -1,32 +1,32 @@
-.specifications{
+.specifications {
   margin: 1;
 }
 
-.specifications__name{
+.specifications__name {
   font-family: $ff-oswald;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  color:$color-nero;
+  color: $color-nero;
 }
 
-.specifications__list{
+.specifications__list {
   margin: 1;
 }
 
-.specifications__description{
+.specifications__description {
   font-family: $ff-lato;
   font-size: $fz-default;
   line-height: $fz-default;
   font-weight: 400;
-  color:$color-charcoal;
+  color: $color-charcoal;
 }
 
-.specifications__price{
+.specifications__price {
   font-family: $ff-lato;
   font-size: $fz-default;
   line-height: $fz-default;
   font-weight: 400;
-  color:$color-charcoal;
+  color: $color-charcoal;
 }
