@@ -1,17 +1,13 @@
 .contacts {
   margin: 0;
-  &--index {
-    background-color: $color-default-white;
-  }
-  &--form {
-    background-color: $color-white-smoke;
-  }
-  &--catalog {
+  background-color: $color-default-white;
+
+  &--inner {
     background-color: $color-white-smoke;
   }
 }
 
-contacts__content {
+.contacts__content {
   margin: 0;
 }
 
