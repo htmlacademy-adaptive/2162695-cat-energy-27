@@ -1,0 +1,27 @@
+.plus{
+  margin:0;
+}
+
+.plus__title{
+  font-family: $ff-oswald;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color:$color-default-black;
+}
+
+.plus__wrapper{
+  margin: 0;
+}
+
+.plus__list{
+  list-style-type: none;
+}
+
+.plus__item{
+  font-family: $ff-lato;
+  font-size: $fz-default;
+  line-height: 18px;
+  font-weight: 400;
+  color:$color-charcoal;
+}

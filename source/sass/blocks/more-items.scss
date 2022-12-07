@@ -1,0 +1,31 @@
+.more-items{
+  margin: 1;
+}
+
+.more-items__title{
+  font-family: $ff-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color:$color-black;
+}
+
+.more-items__description{
+  font-family: $ff-lato;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color:$color-charcoal;
+}
+
+.more-items__button{
+  font-family: $ff-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color:$color-charcoal;
+  background-color: $color-white-smoke;
+  border: none;
+}

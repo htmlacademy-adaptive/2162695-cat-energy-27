@@ -1,0 +1,38 @@
+.contacts {
+  margin: 0;
+  &--index {
+    background-color: $color-default-white;
+  }
+  &--form {
+    background-color: $color-white-smoke;
+  }
+  &--catalog {
+    background-color: $color-white-smoke;
+  }
+}
+
+contacts__content {
+  margin: 0;
+}
+
+.contacts__description {
+  font-family: $ff-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-default-black;
+}
+
+.contacts__address-street {
+  font-family: $ff-lato;
+  font-size: $fz-default;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+  color: $color-charcoal;
+}
+
+.contacts__map {
+  margin: 0;
+}
