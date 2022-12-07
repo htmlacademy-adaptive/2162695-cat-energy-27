@@ -1,0 +1,18 @@
+.site-list {
+  list-style-type: none;
+  color: inherit;
+}
+
+.site-list__item {
+  margin: 0;
+}
+
+.site-list__link {
+  font-family: $ff-oswald;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-default-black;
+}

@@ -1,0 +1,29 @@
+.cat-data {
+  margin: 0;
+}
+
+.cat-data__list {
+  list-style-type: none;
+}
+
+.cat-data__item {
+  margin: 0;
+}
+
+.cat-data__label {
+  font-family: $ff-oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-charcoal;
+}
+
+.cat-data__input {
+  font-family: $ff-oswald;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $color-charcoal;
+}

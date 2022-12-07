@@ -1,1 +1,43 @@
-// Начните писать стили здесь
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize.scss";
+
+// Global
+//---------------------------------
+
+@import "variables.scss";
+@import "global/fonts.scss";
+@import "global/reboot.scss";
+@import "global/utils.scss";
+@import "global/container.scss";
+
+// Blocks
+//---------------------------------
+
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-list.scss";
+@import "blocks/main-index.scss";
+@import "blocks/promo.scss";
+@import "blocks/program.scss";
+@import "blocks/plus.scss";
+@import "blocks/living-example.scss";
+@import "blocks/example.scss";
+@import "blocks/contacts.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/main-form.scss";
+@import "blocks/program-selection.scss";
+@import "blocks/cat-data.scss";
+@import "blocks/program-type.scss";
+@import "blocks/owner-contacts.scss";
+@import "blocks/comment.scss";
+@import "blocks/preferences.scss";
+@import "blocks/main-catalog.scss";
+@import "blocks/catalog.scss";
+@import "blocks/more-items.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/specifications.scss";
+@import "blocks/bonus.scss";

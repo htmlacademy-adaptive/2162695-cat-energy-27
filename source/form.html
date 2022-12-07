@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body>
     <header class="main-header">
       <a class="main-header__logo">
         <img
@@ -31,13 +32,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a> Главная </a>
+              <a class="site-list__link"> Главная </a>
             </li>
             <li class="site-list__item">
-              <a href="#"> Каталог продукции </a>
+              <a class="site-list__link" href="#"> Каталог продукции </a>
             </li>
             <li class="site-list__item">
-              <a href="#"> Подбор программы </a>
+              <a class="site-list__link" href="#"> Подбор программы </a>
             </li>
           </ul>
         </div>
@@ -210,7 +211,7 @@
           </form>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts--form">
         <h2 class="visually-hidden">Наши контакты.</h2>
         <div class="contacts__content">
           <h3 class="contacts__description">
@@ -225,7 +226,7 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo">
+        <a class="main-footer__logo" href="#">
           <img
             class="main-footer__logo-image"
             src="#"
@@ -240,21 +241,21 @@
               <a
                 class="social__link social__link--vkontakte"
                 href="https://vk.com/htmlacademy"
-                >Мы в Вконтакте</a
+                ><span class="visually-hidden"> Мы в Вконтакте</span></a
               >
             </li>
             <li class="social__item">
               <a
                 class="social__link social__link--youtube"
                 href="https://www.youtube.com/user/htmlacademyru"
-                >Мы в Ютубе</a
+                ><span class="visually-hidden">Мы в Ютубе</span></a
               >
             </li>
             <li class="social__item">
               <a
                 class="social__link social__link--telegram"
                 href="https://t.me/htmlacademy"
-                >Мы в Телеграме</a
+                ><span class="visually-hidden">Мы в Телеграме</span></a
               >
             </li>
           </ul>
@@ -264,6 +265,12 @@
               href="https://htmlacademy.ru/intensive/adaptive"
               >HTML Academy</a
             >
+            <a
+              class="copyright__link"
+              href="https://htmlacademy.ru/intensive/adaptive"
+              ><span class="visually-hidden">Переход на страницу Html-academy.</span></a
+            >
+
           </div>
         </div>
       </div>
