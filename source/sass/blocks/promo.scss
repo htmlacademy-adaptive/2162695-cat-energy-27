@@ -1,10 +1,68 @@
 .promo {
   margin: 0;
+  padding: 27px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  picture {
+    z-index: 1;
+  }
+
+  @media (min-width: $vp-768) {
+    background-image: none;
+    padding: 62px 150px 0 90px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 114px 300px 185px 80px;
+    flex-direction: row;
+  }
 }
 
 .promo__wrapper {
+  position: relative;
+  display: block;
   margin: 0;
-  background-color: $color-apple;
+  text-align: center;
+  z-index: -1;
+
+  @media (min-width: $vp-1024) {
+    width: 50%;
+  }
+}
+
+.promo__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba($color-apple, 0.7);
+  z-index: -1;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+}
+
+.promo__wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 100vw;
+  height: 100%;
+  background-image: url("../img/content/index/index-background-cat.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
 }
 
 .promo__title {
@@ -13,6 +71,24 @@
   line-height: 36px;
   font-weight: 400;
   color: $color-default-white;
+  margin: 0 0 25px 0;
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-default-black;
+    text-align: left;
+    margin: 0 0 41px 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    color: $color-default-black;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 40px 0;
+  }
 }
 
 .promo__description {
@@ -22,6 +98,23 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $color-default-white;
+  margin: 0 0 164px 0;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-default-black;
+    text-align: left;
+    margin: 0 0 49px 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    color: $color-default-black;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 52px 0;
+  }
 }
 
 .promo__button {
@@ -33,4 +126,30 @@
   text-transform: uppercase;
   color: $color-default-white;
   background-color: $color-apple;
+  transform: translateY(150px);
+  padding: 7px 44px 7px 44px;
+
+  @media (min-width: $vp-768) {
+    transform: none;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px 14px 26px;
+  }
+}
+
+.promo__logo-image {
+  transform: translateY(-150px);
+  z-index: 2;
+
+  @media (min-width: $vp-768) {
+    transform: translateY(-50px);
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $vp-1024) {
+    transform: translateY(-50px);
+    width: 552px;
+    height: 499px;
+  }
 }

@@ -1,5 +1,101 @@
 .example {
-  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 20px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 99px 0;
+    gap: 42px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin: 0 0 55px 0;
+    gap: 42px;
+    flex-wrap: nowrap;
+  }
+}
+
+.example--wrapper{
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $vp-1024) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.example__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 124px;
+  padding: 14px 20px 0 20px;
+
+  text-align: center;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $vp-768) {
+    width: 162px;
+    padding: 14px 10px 0 10px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 162px;
+    padding: 14px 10px 0 10px;
+  }
+}
+
+.example__content::before{
+  content: "";
+  width: 124px;
+  height: 56px;
+  border: 1px solid $color-light-grey;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+
+  @media (min-width: $vp-768) {
+    width: 162px;
+    height: 72px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 162px;
+    height: 72px;
+  }
+}
+
+.example__content::after{
+  content: "";
+  width: 87px;
+  height: 19px;
+  top: 46px;
+  left: 18px;
+  background-color: $color-whisper;
+  position: absolute;
+  z-index: 2;
+
+  @media (min-width: $vp-768) {
+    width: 114px;
+    height: 30px;
+    left: 24px;
+    background-color: $color-default-white;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 114px;
+    height: 30px;
+    left: 24px;
+    background-color: $color-white-smoke;
+  }
 }
 
 .example__title {
@@ -9,6 +105,24 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $color-default-black;
+
+  position: relative;
+  z-index: 3;
+  margin: 0 0 8px 0;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 11px 0;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin: 0 0 11px 0;
+
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
@@ -17,4 +131,23 @@
   line-height: 12px;
   font-weight: 400;
   color: $color-charcoal;
+  display: block;
+  position: relative;
+  z-index: 3;
+  margin: 0 10px 0 10px;
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    background-color: $color-default-white;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    background-color: $color-white-smoke;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0;
+  }
 }

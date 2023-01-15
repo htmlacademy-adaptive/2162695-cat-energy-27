@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css" >
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <header class="main-header">
@@ -32,13 +33,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link"> Главная </a>
+              <a class="site-list__link" href="index.html"> Главная </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#"> Каталог продукции </a>
+              <a class="site-list__link" href="catalog.html"> Каталог продукции </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#"> Подбор программы </a>
+              <a class="site-list__link" href="form.html"> Подбор программы </a>
             </li>
           </ul>
         </div>
@@ -46,241 +47,220 @@
     </header>
     <main class="main-catalog">
       <section class="catalog">
-        <h1 class="catalog__title">Каталог продукции</h1>
-        <div class="catalog__wrapper">
+        <div class="container">
+          <h1 class="catalog__title">Каталог продукции</h1>
           <div class="catalog__list">
             <div class="catalog__item">
-              <a class="catalog__img-link" href="#">
-                <img
-                  class="catalog__card-image"
-                  src="../source/img/content/catalog/cat-energy-pro-500g-chicken.png"
-                  width="68"
-                  height="86"
-                  alt="Cat Energy Pro 500г со вкусом курицы."
-                >
-              </a>
-              <div class="catalog__item-content">
-                <a class="catalog__title-link" href="#">
-                  <h3 class="catalog__card-title">Cat Energy PRO 500 г</h3>
+              <div class="catalog__wrapper">
+                <a class="catalog__img-link" href="#">
+                  <img class="catalog__card-image" src="../img/content/catalog/cat-energy-pro-500g-chicken.png" width="68" height="86"
+                    alt="Cat Energy Pro 500г со вкусом курицы.">
                 </a>
               </div>
-              <dl class="catalog__description-list">
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Масса</dt>
-                  <dd class="catalog__description-definition">500 г</dd>
+                <div class="catalog__item-content">
+                  <a class="catalog__title-link" href="#">
+                    <h3 class="catalog__card-title">Cat Energy PRO 500 г</h3>
+                  </a>
+                  <dl class="catalog__description-list">
+                    <div class="catalog__description-wrapper">
+                      <dt class="catalog__description-term">Масса</dt>
+                      <dd class="catalog__description-definition">500 г</dd>
+                    </div>
+                    <div class="catalog__description-wrapper">
+                      <dt class="catalog__description-term">Вкус</dt>
+                      <dd class="catalog__description-definition">Курица</dd>
+                    </div>
+                    <div class="catalog__description-wrapper">
+                      <dt class="catalog__description-term">Цена</dt>
+                      <dd class="catalog__description-definition">700 ₽</dd>
+                    </div>
+                  </dl>
                 </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Вкус</dt>
-                  <dd class="catalog__description-definition">Курица</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Цена</dt>
-                  <dd class="catalog__description-definition">700 ₽</dd>
-                </div>
-              </dl>
               <a class="catalog__button catalog__button--order" href="#">
                 Заказать
               </a>
             </div>
             <div class="catalog__item">
-              <a class="catalog__img-link" href="#">
-                <img
-                  class="catalog__card-image"
-                  src="../source/img/content/catalog/cat-energy-pro-1000g-chicken.png"
-                  width="84"
-                  height="100"
-                  alt="Cat Energy Pro 1000г со вкусом курицы."
-                >
-              </a>
+              <div class="catalog__wrapper">
+                <a class="catalog__img-link" href="#">
+                  <img class="catalog__card-image" src="../img/content/catalog/cat-energy-pro-1000g-chicken.png" width="84"
+                    height="100" alt="Cat Energy Pro 1000г со вкусом курицы.">
+                </a>
+              </div>
               <div class="catalog__item-content">
                 <a class="catalog__title-link" href="#">
                   <h3 class="catalog__card-title">Cat Energy PRO 1000 г</h3>
                 </a>
+                <dl class="catalog__description-list">
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Масса</dt>
+                    <dd class="catalog__description-definition">1000 г</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Вкус</dt>
+                    <dd class="catalog__description-definition">Курица</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Цена</dt>
+                    <dd class="catalog__description-definition">1000 ₽</dd>
+                  </div>
+                </dl>
               </div>
-              <dl class="catalog__description-list">
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Масса</dt>
-                  <dd class="catalog__description-definition">1000 г</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Вкус</dt>
-                  <dd class="catalog__description-definition">Курица</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Цена</dt>
-                  <dd class="catalog__description-definition">1000 ₽</dd>
-                </div>
-              </dl>
               <a class="catalog__button catalog__button--order" href="#">
                 Заказать
               </a>
             </div>
             <div class="catalog__item">
-              <a class="catalog__img-link" href="#">
-                <img
-                  class="catalog__card-image"
-                  src="../source/img/content/catalog/cat-energy-pro-500g-fish.png"
-                  width="68"
-                  height="78"
-                  alt="Cat Energy Pro 500г со вкусом рыбы."
-                >
-              </a>
+              <div class="catalog__wrapper">
+                <a class="catalog__img-link" href="#">
+                  <img class="catalog__card-image" src="../img/content/catalog/cat-energy-pro-500g-fish.png" width="68"
+                    height="78" alt="Cat Energy Pro 500г со вкусом рыбы.">
+                </a>
+              </div>
               <div class="catalog__item-content">
                 <a class="catalog__title-link" href="#">
                   <h3 class="catalog__card-title">Cat Energy PRO 500 г</h3>
                 </a>
+                <dl class="catalog__description-list">
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Масса</dt>
+                    <dd class="catalog__description-definition">500 г</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Вкус</dt>
+                    <dd class="catalog__description-definition">Рыба</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Цена</dt>
+                    <dd class="catalog__description-definition">700 ₽</dd>
+                  </div>
+                </dl>
               </div>
-              <dl class="catalog__description-list">
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Масса</dt>
-                  <dd class="catalog__description-definition">500 г</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Вкус</dt>
-                  <dd class="catalog__description-definition">Рыба</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Цена</dt>
-                  <dd class="catalog__description-definition">700 ₽</dd>
-                </div>
-              </dl>
               <a class="catalog__button catalog__button--order" href="#">
                 Заказать
               </a>
             </div>
             <div class="catalog__item">
-              <a class="catalog__img-link" href="#">
-                <img
-                  class="catalog__card-image"
-                  src="../source/img/content/catalog/cat-energy-pro-1000g-fish.png"
-                  width="84"
-                  height="100"
-                  alt="Cat Energy Pro 1000г со вкусом рыбы."
-                >
-              </a>
+              <div class="catalog__wrapper">
+                <a class="catalog__img-link" href="#">
+                  <img class="catalog__card-image" src="../img/content/catalog/cat-energy-pro-1000g-fish.png" width="84"
+                    height="100" alt="Cat Energy Pro 1000г со вкусом рыбы.">
+                </a>
+              </div>
               <div class="catalog__item-content">
                 <a class="catalog__title-link" href="#">
                   <h3 class="catalog__card-title">Cat Energy PRO 1000 г</h3>
                 </a>
+                <dl class="catalog__description-list">
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Масса</dt>
+                    <dd class="catalog__description-definition">1000 г</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Вкус</dt>
+                    <dd class="catalog__description-definition">Рыба</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Цена</dt>
+                    <dd class="catalog__description-definition">1000 ₽</dd>
+                  </div>
+                </dl>
               </div>
-              <dl class="catalog__description-list">
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Масса</dt>
-                  <dd class="catalog__description-definition">1000 г</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Вкус</dt>
-                  <dd class="catalog__description-definition">Рыба</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Цена</dt>
-                  <dd class="catalog__description-definition">1000 ₽</dd>
-                </div>
-              </dl>
               <a class="catalog__button catalog__button--order" href="#">
                 Заказать
               </a>
             </div>
             <div class="catalog__item">
-              <a class="catalog__img-link" href="#">
-                <img
-                  class="catalog__card-image"
-                  src="../source/img/content/catalog/cat-energy-slim-500g-buckwheat.png"
-                  width="68"
-                  height="78"
-                  alt="Cat Energy Slim 500г со вкусом гречки."
-                >
-              </a>
+              <div class="catalog__wrapper">
+                <a class="catalog__img-link" href="#">
+                  <img class="catalog__card-image" src="../img/content/catalog/cat-energy-slim-500g-buckwheat.png" width="68"
+                    height="78" alt="Cat Energy Slim 500г со вкусом гречки.">
+                </a>
+              </div>
               <div class="catalog__item-content">
                 <a class="catalog__title-link" href="#">
                   <h3 class="catalog__card-title">Cat Energy Slim 500 г</h3>
                 </a>
+                <dl class="catalog__description-list">
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Масса</dt>
+                    <dd class="catalog__description-definition">500 г</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Вкус</dt>
+                    <dd class="catalog__description-definition">Гречка</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Цена</dt>
+                    <dd class="catalog__description-definition">400 ₽</dd>
+                  </div>
+                </dl>
               </div>
-              <dl class="catalog__description-list">
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Масса</dt>
-                  <dd class="catalog__description-definition">500 г</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Вкус</dt>
-                  <dd class="catalog__description-definition">Гречка</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Цена</dt>
-                  <dd class="catalog__description-definition">400 ₽</dd>
-                </div>
-              </dl>
               <a class="catalog__button catalog__button--order" href="#">
                 Заказать
               </a>
             </div>
             <div class="catalog__item">
-              <a class="catalog__img-link" href="#">
-                <img
-                  class="catalog__card-image"
-                  src="../source/img/content/catalog/cat-energy-slim-1000g-buckwheat.png"
-                  width="84"
-                  height="100"
-                  alt="Cat Energy Slim 1000г со вкусом гречки."
-                >
-              </a>
+              <div class="catalog__wrapper">
+                <a class="catalog__img-link" href="#">
+                  <img class="catalog__card-image" src="../img/content/catalog/cat-energy-slim-1000g-buckwheat.png" width="84"
+                    height="100" alt="Cat Energy Slim 1000г со вкусом гречки.">
+                </a>
+              </div>
               <div class="catalog__item-content">
                 <a class="catalog__title-link" href="#">
                   <h3 class="catalog__card-title">Cat Energy Slim 1000 г</h3>
                 </a>
+                <dl class="catalog__description-list">
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Масса</dt>
+                    <dd class="catalog__description-definition">1000 г</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Вкус</dt>
+                    <dd class="catalog__description-definition">Гречка</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Цена</dt>
+                    <dd class="catalog__description-definition">700 ₽</dd>
+                  </div>
+                </dl>
               </div>
-              <dl class="catalog__description-list">
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Масса</dt>
-                  <dd class="catalog__description-definition">1000 г</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Вкус</dt>
-                  <dd class="catalog__description-definition">Гречка</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Цена</dt>
-                  <dd class="catalog__description-definition">700 ₽</dd>
-                </div>
-              </dl>
               <a class="catalog__button catalog__button--order" href="#">
                 Заказать
               </a>
             </div>
             <div class="catalog__item">
-              <a class="catalog__img-link" href="#">
-                <img
-                  class="catalog__card-image"
-                  src="../source/img/content/catalog/cat-energy-slim-500g-rice.png"
-                  width="72"
-                  height="84"
-                  alt="Cat Energy Slim 500г со вкусом риса."
-                >
-              </a>
+              <div class="catalog__wrapper">
+                <a class="catalog__img-link" href="#">
+                  <img class="catalog__card-image" src="../img/content/catalog/cat-energy-slim-500g-rice.png" width="72"
+                    height="84" alt="Cat Energy Slim 500г со вкусом риса.">
+                </a>
+              </div>
               <div class="catalog__item-content">
                 <a class="catalog__title-link" href="#">
                   <h3 class="catalog__card-title">Cat Energy Slim 500 г</h3>
                 </a>
+                <dl class="catalog__description-list">
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Масса</dt>
+                    <dd class="catalog__description-definition">500 г</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Вкус</dt>
+                    <dd class="catalog__description-definition">Рис</dd>
+                  </div>
+                  <div class="catalog__description-wrapper">
+                    <dt class="catalog__description-term">Цена</dt>
+                    <dd class="catalog__description-definition">500 ₽</dd>
+                  </div>
+                </dl>
               </div>
-              <dl class="catalog__description-list">
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Масса</dt>
-                  <dd class="catalog__description-definition">500 г</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Вкус</dt>
-                  <dd class="catalog__description-definition">Рис</dd>
-                </div>
-                <div class="catalog__description-wrapper">
-                  <dt class="catalog__description-term">Цена</dt>
-                  <dd class="catalog__description-definition">500 ₽</dd>
-                </div>
-              </dl>
               <a class="catalog__button catalog__button--order" href="#">
                 Заказать
               </a>
             </div>
-            <div class="catalog__item more-items">
+            <div class="more-items">
               <p class="more-items__title">Показать еще 100500 товаров</p>
               <p class="more-items__description">
                 На самом деле вкусов гораздо больше!
@@ -354,15 +334,19 @@
       </section>
       <section class="contacts--inner">
         <h2 class="visually-hidden">Наши контакты.</h2>
-        <div class="contacts__content">
-          <h3 class="contacts__description">
-            приглашаем к сотрудничеству дилеров!
-          </h3>
-          <address class="contacts__address-street">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </address>
+        <div class="container">
+          <div class="contacts__content">
+            <h3 class="contacts__description">
+              приглашаем к сотрудничеству дилеров!
+            </h3>
+            <address class="contacts__address-street">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </address>
+          </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <img class="contacts__img" src="./img/content/index/map.png" width="320" height="362" alt="Карта расположения магазина.">
+        </div>
       </section>
     </main>
     <footer class="main-footer">
