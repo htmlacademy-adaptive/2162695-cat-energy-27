@@ -1,15 +1,36 @@
-.social {
-  margin: 0;
-}
-
 .social__list {
-  list-style-type: none;
-}
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 19px 0 17px 0;
 
-.social__item {
-  margin: 0;
+  list-style-type: none;
+
+  border-top: 1px solid $color-gainsboro;
+  border-bottom: 1px solid $color-gainsboro;
+
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+    margin: 0 55px 0 75px;
+    padding: 0;
+
+    border: none;
+  }
 }
 
 .social__link {
-  margin: 0;
+  &:hover svg {
+    fill: $color-apple;
+  }
+
+  &:active svg {
+    fill: rgba($color-apple, 30%);
+  }
+}
+
+.social__svg {
+  fill: $color-dim-gray;
 }
