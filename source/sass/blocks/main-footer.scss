@@ -8,7 +8,11 @@
   }
 
   @media (min-width: $desktop-width) {
+<<<<<<< HEAD
+    padding: 70px 0 65px 0;
+=======
     padding: 60px 0;
+>>>>>>> 6af64d3286bdc158d5228ef11680092618e09d82
   }
 }
 
@@ -23,6 +27,21 @@
 .main-footer__logo {
   display: block;
   margin: 0 auto;
+<<<<<<< HEAD
+  margin-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    width: 146px;
+    height: 27px;
+  }
+}
+
+.main-footer__link {
+  display: flex;
+}
+
+=======
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
@@ -30,6 +49,7 @@
   }
 }
 
+>>>>>>> 6af64d3286bdc158d5228ef11680092618e09d82
 .main-footer__link:not(.main-footer__link--current) .main-footer__logo {
   &:hover {
     opacity: 0.8;

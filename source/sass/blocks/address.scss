@@ -20,7 +20,11 @@
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
+<<<<<<< HEAD
+    padding: 58px 40px;
+=======
     padding: 58px 38зч;
+>>>>>>> 6af64d3286bdc158d5228ef11680092618e09d82
   }
 
   @media (min-width: $desktop-width) {
@@ -72,7 +76,11 @@
 
   font-size: 14px;
   line-height: 20px;
+<<<<<<< HEAD
+  font-family: $ff-lato;
+=======
   font-family: $ff-arial;
+>>>>>>> 6af64d3286bdc158d5228ef11680092618e09d82
   color: $color-charcoal;
 
   @media (min-width: $tablet-width) {

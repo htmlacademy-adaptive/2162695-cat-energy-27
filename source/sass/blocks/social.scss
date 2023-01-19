@@ -2,19 +2,32 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+<<<<<<< HEAD
+  margin-bottom: 20px;
+  padding: 19px 0 17px 0;
+=======
   margin-bottom: 17px;
   padding: 23px 0 17px 0;
+>>>>>>> 6af64d3286bdc158d5228ef11680092618e09d82
 
   list-style-type: none;
 
   border-top: 1px solid $color-gainsboro;
   border-bottom: 1px solid $color-gainsboro;
 
+<<<<<<< HEAD
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+    margin: 0 55px 0 75px;
+=======
   gap: 27px;
 
   @media (min-width: $tablet-width) {
     max-width: 300px;
     margin: 0 55px 0px 75px;
+>>>>>>> 6af64d3286bdc158d5228ef11680092618e09d82
     padding: 0;
 
     border: none;
