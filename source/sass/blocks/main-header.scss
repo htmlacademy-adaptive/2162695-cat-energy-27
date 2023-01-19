@@ -15,11 +15,19 @@
 
     @media (min-width: $tablet-width) {
       margin: 0 auto;
+<<<<<<< HEAD
       padding: 0 0 30px 0;
     }
 
     @media (min-width: $desktop-width) {
       padding: 55px 0 48px 0;
+=======
+      padding: 7px 0 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 55px 0 48px;
+>>>>>>> 6af64d3286bdc158d5228ef11680092618e09d82
     }
   }
 
@@ -28,7 +36,11 @@
     align-items: flex-end;
     width: calc(100% - 30px);
     margin: 0 auto;
+<<<<<<< HEAD
     padding: 0 0 30px;
+=======
+    padding: 7px 0 30px;
+>>>>>>> 6af64d3286bdc158d5228ef11680092618e09d82
 
     border: none;
   }
@@ -64,7 +76,11 @@
   @media (min-width: $tablet-width) {
     width: 174px;
     height: auto;
+<<<<<<< HEAD
     margin: 0 0 0 15px;
+=======
+    margin: 15px 0 0 15px;
+>>>>>>> 6af64d3286bdc158d5228ef11680092618e09d82
   }
 
   @media (min-width: $desktop-width) {
